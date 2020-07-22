@@ -1,0 +1,9 @@
+{
+  "name": "goodManifest",
+  "version": "1.0.0",
+  "main": "./fakeSrc/FakeIndex.js",
+  "module": "./fakeSrc/FakeMain.js",
+  "author": "Branden Dane",
+  "license": "MIT",
+  "private": false
+}

@@ -1,0 +1,38 @@
+{
+  "name": "quick-strap",
+  "version": "1.0.0",
+  "description": "The swiss-army knife of common modules used for development. ESM, Dotenv, Webpack, Babel, Rollup, and more. Useful when you'd rather group all your modules that \"must be called before anything else\" together, in one place. Also, a no-frills, no-bullshit way to rangle all your top-level deps together for easy dependency injection. Stay Dry my friends!",
+  "main": "./src/index.js",
+  "exports": {
+    "import": "./src/main.js",
+    "require": "./src/index.js"
+  },
+  "module": "./src/main.js",
+  "author": "Branden Dane",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=12.x"
+  },
+  "scripts": {
+    "test:watch": "jest --watchAll",
+    "test": "jest",
+    "lint": "eslint src/**"
+  },
+  "dependencies": {
+    "core-js": "3",
+    "dedent": "^0.7.0",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-jest": "^26.1.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5"
+  }
+}
