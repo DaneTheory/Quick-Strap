@@ -1,6 +1,6 @@
 {
   "name": "@danetheory/quick-strap",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "The swiss-army knife of common modules used for development. ESM, Dotenv, Webpack, Babel, Rollup, and more. Useful when you'd rather group all your modules that \"must be called before anything else\" together, in one place. Also, a no-frills, no-bullshit way to rangle all your top-level deps together for easy dependency injection. Stay Dry my friends!",
   "repository": {
     "url": "https://github.com/DaneTheory/Quick-Strap",
@@ -26,7 +26,7 @@
     "lint": "eslint src/**",
     "build": "rm -rf dist && microbundle --name QuickStrap --target node --compress --sourcemap",
     "dev": "microbundle watch",
-    "preversion": "yarn lint && yarn test",
+    "preversion": "yarn test",
     "postversion": "git push --tags && yarn publish --access=public . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
   },
   "dependencies": {
